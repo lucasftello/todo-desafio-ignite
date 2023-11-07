@@ -1,0 +1,79 @@
+.container {
+  width: 46rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.tasks {
+  margin-top: 5.687rem;
+  margin-bottom: 4rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.created,
+.done {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.created strong {
+  font-size: 0.875rem;
+  color: var(--blue);
+}
+
+.done strong {
+  font-size: 0.875rem;
+  color: var(--purple);
+}
+
+.created span,
+.done span {
+  width: 1.562rem;
+  height: 1.187rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+  font-size: 0.75rem;
+  border-radius: 10px;
+}
+
+.taskList {
+  margin-top: 1.5rem;
+}
+
+.emptyList {
+  border-top: 1px solid var(--gray-400);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 4rem;
+  text-align: center;
+}
+
+.emptyList svg {
+  color: var(--gray-400);
+  margin-bottom: 1rem;
+}
+
+.emptyList p {
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 425px) {
+  .tasks {
+    margin: 4rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}

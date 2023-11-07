@@ -1,0 +1,97 @@
+.header {
+  height: 12.5rem;
+  background-color: var(--gray-700);
+}
+
+.container {
+  width: 46rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 7.875rem;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1.687rem;
+  padding-left: inherit;
+  padding-right: inherit;
+}
+
+.form input {
+  flex: 1;
+  height: 3.375rem;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  padding: 1rem;
+  color: var(--gray-100);
+}
+
+.form input:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 1px var(--purple-dark);
+}
+
+.form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  height: 3.375rem;
+  background-color: var(--blue-dark);
+  color: var(--gray-100);
+  border: 0;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.form button:disabled {
+  opacity: 0.9;
+  cursor: not-allowed;
+}
+
+.form button svg {
+  color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    height: auto;
+    padding: 1.875rem 0;
+  }
+
+  .container {
+    gap: 3.125rem;
+  }
+
+  .form {
+    flex-direction: column;
+    position: initial;
+    padding-left: initial;
+    padding-right: initial;
+  }
+}
